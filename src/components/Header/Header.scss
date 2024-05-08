@@ -5,6 +5,9 @@
   flex-direction: column;
   justify-content: center;
 
+  position: absolute;
+  z-index: 1;
+
   &__container {
     display: flex;
     justify-content: space-around;
