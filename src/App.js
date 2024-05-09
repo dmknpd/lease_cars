@@ -1,16 +1,16 @@
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import Main from "./components/Main/Main";
 
 import "./App.css";
 
 const App = () => {
   return (
-    <div className="App">
-      <Header bgColor="" />
-      <Main />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />}></Route>
+      </Routes>
+    </Router>
   );
 };
 

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./Header.scss";
 import logo from "../../img/logo-white.png";
 
@@ -6,7 +8,9 @@ const Header = ({ bgColor = "var(--black)" }) => {
     <header className="header" style={{ backgroundColor: bgColor }}>
       <div className="header__container">
         <div className="header__logo-container">
-          <img src={logo} alt="D&M logo" className="header__logo" />
+          <Link to="/" className="header__menu-link">
+            <img src={logo} alt="D&M logo" className="header__logo" />
+          </Link>
         </div>
         <div
           className="header__menu-container
@@ -14,9 +18,9 @@ const Header = ({ bgColor = "var(--black)" }) => {
         >
           <ul className="header__menu">
             <li className="header__menu-item">
-              <a href="#" className="header__menu-link">
+              <Link to="/cars" className="header__menu-link">
                 NEW CARS
-              </a>
+              </Link>
             </li>
             <li className="header__menu-item">
               <a href="#" className="header__menu-link">

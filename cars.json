@@ -1,0 +1,68 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "name": "Toyota Crown 2023",
+      "type": "electrified",
+      "price": "39900",
+      "month": "650",
+      "img": ""
+    },
+    {
+      "id": "2",
+      "name": "Prius Prime 2023",
+      "type": "electrified",
+      "price": "39900",
+      "month": "450",
+      "img": ""
+    },
+    {
+      "id": "3",
+      "name": "Toyota Prius 2023",
+      "type": "electrified",
+      "price": "39900",
+      "month": "400",
+      "img": ""
+    },
+    {
+      "id": "4",
+      "name": "Hyundai Kona 2023",
+      "type": "crossover",
+      "price": "39900",
+      "month": "510",
+      "img": ""
+    },
+    {
+      "id": "5",
+      "name": "Ford Explorer 2023",
+      "type": "suv",
+      "price": "39900",
+      "month": "1013",
+      "img": ""
+    },
+    {
+      "id": "6",
+      "name": "Santa  Fe 2023",
+      "type": "suv",
+      "price": "39900",
+      "month": "739",
+      "img": ""
+    },
+    {
+      "id": "7",
+      "name": "KIA Niro 2023",
+      "type": "crossover",
+      "price": "33600",
+      "month": "554",
+      "img": ""
+    },
+    {
+      "id": "8",
+      "name": "Chevrolet Silverado",
+      "type": "truck",
+      "price": "62260",
+      "month": "1,032",
+      "img": ""
+    }
+  ]
+}
