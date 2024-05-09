@@ -1,14 +1,17 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import "./Header.scss";
 import logo from "../../img/logo-white.png";
 
-const Header = ({ bgColor = "var(--black)" }) => {
+const Header = ({ main }) => {
+  const styles = main
+    ? { position: "absolute" }
+    : { backgroundColor: "var(--black)" };
   return (
-    <header className="header" style={{ backgroundColor: bgColor }}>
+    <header className="header" style={styles}>
       <div className="header__container">
         <div className="header__logo-container">
-          <Link to="/" className="header__menu-link">
+          <Link exact to="/" className="header__menu-link">
             <img src={logo} alt="D&M logo" className="header__logo" />
           </Link>
         </div>
@@ -18,9 +21,9 @@ const Header = ({ bgColor = "var(--black)" }) => {
         >
           <ul className="header__menu">
             <li className="header__menu-item">
-              <Link to="/cars" className="header__menu-link">
+              <NavLink to="/cars" className="header__menu-link">
                 NEW CARS
-              </Link>
+              </NavLink>
             </li>
             <li className="header__menu-item">
               <a href="#" className="header__menu-link">

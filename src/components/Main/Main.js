@@ -5,7 +5,7 @@ import MainContent from "./MainContent";
 const Main = () => {
   return (
     <div className="main-page">
-      <Header bgColor="" />
+      <Header main={true} />
       <MainContent />
       <Footer />
     </div>
