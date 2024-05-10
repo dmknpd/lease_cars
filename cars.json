@@ -6,7 +6,7 @@
       "type": "electrified",
       "price": "39900",
       "month": "650",
-      "img": ""
+      "img": "https://i.gaw.to/content/photos/54/87/548765-toyota-crown-platinum-2023-une-plus-que-berline.jpeg?1024x640"
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "type": "electrified",
       "price": "39900",
       "month": "450",
-      "img": ""
+      "img": "https://www.digitaltrends.com/wp-content/uploads/2023/07/2023-Toyota-Prius-Prime-front-three-quarter.jpeg?fit=1500%2C1000&p=1"
     },
     {
       "id": "3",
@@ -22,31 +22,31 @@
       "type": "electrified",
       "price": "39900",
       "month": "400",
-      "img": ""
+      "img": "https://media.ed.edmunds-media.com/toyota/prius/2023/oem/2023_toyota_prius_4dr-hatchback_limited_fq_oem_1_1280.jpg"
     },
     {
       "id": "4",
       "name": "Hyundai Kona 2023",
-      "type": "crossover",
+      "type": "crossover&suv",
       "price": "39900",
       "month": "510",
-      "img": ""
+      "img": "https://images.carexpert.com.au/resize/3000/-/app/uploads/2023/06/hyundai-kona-premium-n-line-2.jpg"
     },
     {
       "id": "5",
       "name": "Ford Explorer 2023",
-      "type": "suv",
+      "type": "crossover&suv",
       "price": "39900",
       "month": "1013",
-      "img": ""
+      "img": "https://motor.ru/imgs/2024/02/02/06/6338160/8c929115091b6d1b1a1d0e54ddf4c8e8f6385248.jpg"
     },
     {
       "id": "6",
       "name": "Santa  Fe 2023",
-      "type": "suv",
+      "type": "crossover&suv",
       "price": "39900",
       "month": "739",
-      "img": ""
+      "img": "https://autocanadaprod-com.cdn-convertus.com/uploads/sites/30/2023/05/2023-Hyundai-Santa-Fe-PHEV-AWD-Limited-front-three-quarter-1.jpg"
     },
     {
       "id": "7",
@@ -54,7 +54,7 @@
       "type": "crossover",
       "price": "33600",
       "month": "554",
-      "img": ""
+      "img": "https://www.cnet.com/a/img/resize/e65c7788ad8174970c3b28dc4acfe3d10f0f8df1/hub/2022/10/07/d5436869-fe42-440e-8e7c-30ee8f9ba57e/2023-kia-niro-ogi-1.jpg?auto=webp&fit=crop&height=675&width=1200"
     },
     {
       "id": "8",
@@ -62,7 +62,7 @@
       "type": "truck",
       "price": "62260",
       "month": "1,032",
-      "img": ""
+      "img": "https://media.ed.edmunds-media.com/chevrolet/silverado-1500/2023/oem/2023_chevrolet_silverado-1500_crew-cab-pickup_high-country_fq_oem_1_1600.jpg"
     }
   ]
 }

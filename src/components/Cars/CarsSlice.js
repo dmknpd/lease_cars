@@ -2,14 +2,15 @@ import {
   createSlice,
   createAsyncThunk,
   createEntityAdapter,
+  createSelector,
 } from "@reduxjs/toolkit";
-import axios from "axios";
 
 const carsAdapter = createEntityAdapter({});
 
 const initialState = carsAdapter.getInitialState({
   carsLoadingStatus: "idle",
-  activeFilter: "all",
+  carsActiveFilter: "all",
+  carsDisplayCount: 4,
 });
 
 export const fetchCars = createAsyncThunk("cars/fetchCars", async () => {
@@ -29,7 +30,14 @@ export const fetchCars = createAsyncThunk("cars/fetchCars", async () => {
 const carsSlice = createSlice({
   name: "cars",
   initialState,
-  reducers: {},
+  reducers: {
+    setCarFilter: (state, action) => {
+      state.carsActiveFilter = action.payload;
+    },
+    setCarsCount: (state) => {
+      state.carsDisplayCount += 4;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchCars.pending, (state) => {
@@ -45,10 +53,19 @@ const carsSlice = createSlice({
   },
 });
 
-export const { selectAll } = carsAdapter.getSelectors((state) => state.cars);
+const { selectAll } = carsAdapter.getSelectors((state) => state.cars);
+
+export const filteredCarsSelector = createSelector(
+  (state) => state.cars.carsActiveFilter,
+  selectAll,
+  (carsActiveFilter, allCars) =>
+    carsActiveFilter === "all"
+      ? allCars
+      : allCars.filter((car) => car.type === carsActiveFilter)
+);
 
 const { actions, reducer } = carsSlice;
 
 export default reducer;
 
-export const { carsFetching, carsFetched, carsFetchingError } = actions;
+export const { setCarFilter, setCarsCount } = actions;

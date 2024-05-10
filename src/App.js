@@ -15,6 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/cars" element={<Cars />}></Route>
+          <Route path="/:name" element={<Main />}></Route>
         </Routes>
       </Router>
     </Provider>
