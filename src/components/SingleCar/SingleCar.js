@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
-import { filteredCarsSelector, fetchCars } from "../Cars/CarsSlice";
+import { fetchSingleCar, selectById } from "../Cars/CarsSlice";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -13,17 +13,13 @@ import "./SingleCar.scss";
 const SingleCar = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
-  const carsList = useSelector(filteredCarsSelector);
+  const car = useSelector((state) => selectById(state, id));
 
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    if (carsList.length === 0) {
-      dispatch(fetchCars());
-    }
-  }, [carsList]);
-
-  let car = carsList.find((car) => car.id === id);
+    dispatch(fetchSingleCar(id));
+  }, []);
 
   if (!car) {
     return (
