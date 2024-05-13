@@ -37,9 +37,9 @@ const CarsList = () => {
 
   const carsList = renderCarsList(cars);
 
-  const carsDisplayHandler = () => {
+  const carsDisplayHandler = useCallback(() => {
     dispatch(setCarsCount());
-  };
+  }, [dispatch]);
 
   //active filter
 
@@ -118,30 +118,6 @@ const CarsList = () => {
               SHOW MORE
             </button>
           ) : null}
-        </div>
-        {/* footer */}
-        <div className="cars__footer-container">
-          <div className="cars__footer-content">
-            <div className="cars__footer-item">
-              <img src={footer_img_1} alt="" className="cars__footer-img" />
-              <div className="cars__footer-text">
-                <h3 className="cars__footer-title">
-                  An easier way to buy your next Toyota
-                </h3>
-                <button className="cars__footer-link">more</button>
-              </div>
-            </div>
-            <div className="cars__footer-item">
-              <img src={footer_img_2} alt="" className="cars__footer-img" />
-              <div className="cars__footer-text">
-                <h3 className="cars__footer-title">
-                  A Guide to Road-Tripping With Pets
-                </h3>
-                <button className="cars__footer-link">more</button>
-              </div>
-            </div>
-          </div>
-          <button className="cars__button">SHOW MORE</button>
         </div>
       </div>
     </div>

@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 
-import car from "../../img/carlisitem.png";
-
 const CarsListItem = (props) => {
   const { id, name, price, month, img } = props;
   const linkName = name.toLowerCase().replace(/\s/g, "-");
