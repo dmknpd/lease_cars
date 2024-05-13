@@ -53,7 +53,7 @@ const carsSlice = createSlice({
   },
 });
 
-const { selectAll } = carsAdapter.getSelectors((state) => state.cars);
+export const { selectAll } = carsAdapter.getSelectors((state) => state.cars);
 
 export const filteredCarsSelector = createSelector(
   (state) => state.cars.carsActiveFilter,

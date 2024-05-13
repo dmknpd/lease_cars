@@ -11,7 +11,7 @@ const Header = ({ main }) => {
     <header className="header" style={styles}>
       <div className="header__container">
         <div className="header__logo-container">
-          <Link exact to="/" className="header__menu-link">
+          <Link to="/" className="header__menu-link">
             <img src={logo} alt="D&M logo" className="header__logo" />
           </Link>
         </div>
@@ -26,17 +26,17 @@ const Header = ({ main }) => {
               </NavLink>
             </li>
             <li className="header__menu-item">
-              <a href="#" className="header__menu-link">
+              <a href="/cars" className="header__menu-link">
                 PRE-OWNED CARS
               </a>
             </li>
             <li className="header__menu-item">
-              <a href="#" className="header__menu-link">
+              <a href="#finance" className="header__menu-link">
                 FINANCE
               </a>
             </li>
             <li className="header__menu-item">
-              <a href="#" className="header__menu-link">
+              <a href="#lease" className="header__menu-link">
                 LEASE VS BUY
               </a>
             </li>

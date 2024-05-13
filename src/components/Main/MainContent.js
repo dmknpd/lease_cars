@@ -36,7 +36,7 @@ const MainContent = () => {
         <ul style={{ margin: "0px" }}> {dots} </ul>
       </div>
     ),
-    customPaging: (i) => (
+    customPaging: () => (
       <div
         style={{
           width: "120px",
@@ -73,7 +73,9 @@ const MainContent = () => {
       <div className="main__content">
         {/* pros */}
         <div className="main__pros">
-          <h2 className="main__header">Why Lease with D&M?</h2>
+          <h2 className="main__header" id="finance">
+            Why Lease with D&M?
+          </h2>
           <ul className="main__pros-list">
             <li className="main__pros-item">
               <img src={pros_1} alt="car img" className="main__pros-img" />
@@ -111,7 +113,9 @@ const MainContent = () => {
         </div>
         {/* work */}
         <div className="main__work">
-          <h2 className="main__header">How Does Leasing Work?</h2>
+          <h2 className="main__header" id="lease">
+            How Does Leasing Work?
+          </h2>
           <p className="main__text">
             Leasing a vehicle is essentially entering into a long term rental
             agreement for that vehicle. Unlike a traditional car purchase, you

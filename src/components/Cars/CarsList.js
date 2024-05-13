@@ -10,8 +10,6 @@ import {
 
 import "./CarsList.scss";
 
-import footer_img_1 from "../../img/cars-footer-1.png";
-import footer_img_2 from "../../img/cars-footer-2.png";
 import CarsListItem from "./CarsListItem";
 
 const CarsList = () => {
@@ -101,7 +99,7 @@ const CarsList = () => {
         {/* list */}
         <div className="cars__list-container">
           {/* items */}
-          {carsLoadingStatus === "idle" ? null : <div class="loader"></div>}
+          {carsLoadingStatus === "idle" ? null : <div className="loader"></div>}
           {carsList.length > 0 ? (
             <ul className="cars__list">
               {" "}
