@@ -104,7 +104,7 @@ const Contact = () => {
                 className="contact-us__submited"
                 style={isSubmited ? { display: "block" } : null}
               >
-                Спасибо! Мы скоро сважемся с Вами.
+                Thank you! We will contact you soon.
               </p>
               <button
                 type="submit"
