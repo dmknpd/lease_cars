@@ -41,9 +41,9 @@ const Header = ({ main }) => {
               </a>
             </li>
             <li className="header__menu-item">
-              <a href="#" className="header__menu-link">
+              <NavLink to="/contact" className="header__menu-link">
                 CONTACT US
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

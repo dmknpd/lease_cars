@@ -1,0 +1,81 @@
+.contact-us {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    margin-top: 100px;
+  }
+
+  &__button {
+    width: 184px;
+    height: 47px;
+    border: none;
+    background-color: var(--black);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--white);
+  }
+
+  &__button:hover {
+    background-color: var(--blue);
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--black);
+    margin-bottom: -30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    max-width: 580px;
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &__input {
+    border: 1px solid var(--blue);
+    width: 270px;
+    height: 57px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--black);
+    padding: 0 20px;
+  }
+
+  &__text {
+    border: 1px solid var(--blue);
+    width: 580px;
+    height: 291px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--black);
+    padding: 28px 20px;
+  }
+}

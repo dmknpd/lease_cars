@@ -1,4 +1,5 @@
 import "./Footer.scss";
+
 import appStore from "../../img/app-store.png";
 import googlePlay from "../../img/google-play.png";
 
