@@ -78,4 +78,16 @@
     color: var(--black);
     padding: 28px 20px;
   }
+
+  &__submited {
+    display: none;
+
+    margin: -15px 0;
+  }
+
+  .error {
+    position: absolute;
+    color: rgb(222, 0, 0);
+    margin-top: 10px;
+  }
 }

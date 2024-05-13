@@ -164,10 +164,9 @@ const MainContent = () => {
               width="1000"
               height="500"
               src="https://www.youtube.com/embed/5rsPLnlQT3g"
-              frameborder="0"
               title="YouTube video player"
               allow="autoplay; encrypted-media"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>
